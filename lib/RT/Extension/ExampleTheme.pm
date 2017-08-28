@@ -1,15 +1,15 @@
 use strict;
 use warnings;
-package RT::Extension::CustomTheme;
+package RT::Extension::ExampleTheme;
 
 our $VERSION = '0.01';
 
 # Add css files to the @CSSFiles config
-RT->AddStyleSheets('custom-theme.css');
+RT->AddStyleSheets('example-theme.css');
 
 =head1 NAME
 
-RT-Extension-CustomTheme - [One line description of module's purpose here]
+RT-Extension-ExampleTheme - [One line description of module's purpose here]
 
 =head1 DESCRIPTION
 
@@ -38,13 +38,13 @@ May need root permissions
 
 If you are using RT 4.2 or greater, add this line:
 
-    Plugin('RT::Extension::CustomTheme');
+    Plugin('RT::Extension::ExampleTheme');
 
 For RT 4.0, add this line:
 
-    Set(@Plugins, qw(RT::Extension::CustomTheme));
+    Set(@Plugins, qw(RT::Extension::ExampleTheme));
 
-or add C<RT::Extension::CustomTheme> to your existing C<@Plugins> line.
+or add C<RT::Extension::ExampleTheme> to your existing C<@Plugins> line.
 
 =item Clear your mason cache
 
@@ -62,11 +62,11 @@ Best Practical Solutions, LLC E<lt>modules@bestpractical.comE<gt>
 
 All bugs should be reported via email to
 
-    L<bug-RT-Extension-CustomTheme@rt.cpan.org|mailto:bug-RT-Extension-CustomTheme@rt.cpan.org>
+    L<bug-RT-Extension-ExampleTheme@rt.cpan.org|mailto:bug-RT-Extension-ExampleTheme@rt.cpan.org>
 
 or via the web at
 
-    L<rt.cpan.org|http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-CustomTheme>.
+    L<rt.cpan.org|http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-ExampleTheme>.
 
 =head1 LICENSE AND COPYRIGHT
 

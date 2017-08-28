@@ -1,5 +1,5 @@
 NAME
-    RT-Extension-CustomTheme - [One line description of module's purpose
+    RT-Extension-ExampleTheme - [One line description of module's purpose
     here]
 
 DESCRIPTION
@@ -20,13 +20,13 @@ INSTALLATION
     Edit your /opt/rt4/etc/RT_SiteConfig.pm
         If you are using RT 4.2 or greater, add this line:
 
-            Plugin('RT::Extension::CustomTheme');
+            Plugin('RT::Extension::ExampleTheme');
 
         For RT 4.0, add this line:
 
-            Set(@Plugins, qw(RT::Extension::CustomTheme));
+            Set(@Plugins, qw(RT::Extension::ExampleTheme));
 
-        or add RT::Extension::CustomTheme to your existing @Plugins line.
+        or add RT::Extension::ExampleTheme to your existing @Plugins line.
 
     Clear your mason cache
             rm -rf /opt/rt4/var/mason_data/obj
@@ -39,11 +39,11 @@ AUTHOR
 BUGS
     All bugs should be reported via email to
 
-        L<bug-RT-Extension-CustomTheme@rt.cpan.org|mailto:bug-RT-Extension-CustomTheme@rt.cpan.org>
+        L<bug-RT-Extension-ExampleTheme@rt.cpan.org|mailto:bug-RT-Extension-ExampleTheme@rt.cpan.org>
 
     or via the web at
 
-        L<rt.cpan.org|http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-CustomTheme>.
+        L<rt.cpan.org|http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-ExampleTheme>.
 
 LICENSE AND COPYRIGHT
     This software is Copyright (c) 2017 by Maureen

@@ -1,5 +1,5 @@
 ---
-abstract: 'RT-Extension-CustomTheme Extension'
+abstract: 'RT-Extension-ExampleTheme Extension'
 author:
   - 'Best Practical Solutions, LLC <modules@bestpractical.com>'
 build_requires:
@@ -13,7 +13,7 @@ license: gplv2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: RT-Extension-CustomTheme
+name: RT-Extension-ExampleTheme
 no_index:
   directory:
     - html
@@ -23,7 +23,7 @@ requires:
   perl: 5.10.1
 resources:
   license: http://opensource.org/licenses/gpl-license.php
-  repository: https://github.com/bestpractical/rt-extension-customtheme
+  repository: https://github.com/bestpractical/rt-extension-exampletheme
 version: '0.01'
 x_module_install_rtx_version: '0.39'
 x_requires_rt: 4.2.0
