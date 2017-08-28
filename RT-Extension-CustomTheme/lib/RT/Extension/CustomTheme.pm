@@ -3,6 +3,8 @@ use warnings;
 package RT::Extension::CustomTheme;
 
 our $VERSION = '0.01';
+
+# Add css files to the @CSSFiles config
 RT->AddStyleSheets('custom-theme.css');
 
 =head1 NAME

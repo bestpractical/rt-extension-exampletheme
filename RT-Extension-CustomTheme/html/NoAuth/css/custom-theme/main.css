@@ -1,0 +1,49 @@
+@import "../rudder/main.css";
+
+body.custom-theme {
+    font-family: helvetica, verdana, sans-serif;
+}
+
+div#body {
+    background-color: #d6f2f5;
+}
+
+div#header {
+    background-color: #2dabb9;
+}
+
+input.button {
+    background-color: #195f67;
+}
+
+.ticket-info-cfs .titlebox .titlebox-title .left, .ticket-info-basics .titlebox .titlebox-title .left {
+    background-color: #666666;
+    color: #fff;
+}
+
+.ticket-info-people .titlebox .titlebox-title .left, .ticket-info-reminders .titlebox .titlebox-title .left {
+    background-color: #003366;
+    color: #fff;
+}
+
+.ticket-info-requestor .titlebox .titlebox-title .left {
+    white-space: nowrap;
+    background-color: #003366;
+    color: #fff;
+}
+
+.ticket-info-links .titlebox .titlebox-title .left, .ticket-info-merge .titlebox .titlebox-title .left {
+    background-color: #999999;
+    color: #fff;
+}
+
+.ticket-info-dates .titlebox .titlebox-title .left, .ticket-info-attachments .titlebox .titlebox-title .left {
+    background-color: #0f373e;
+    color: #fff;
+}
+
+.ticket-info-generic .titlebox .titlebox-title .left {
+    background-color: #547ccc;
+    color: #fff;
+}
+
