@@ -9,18 +9,11 @@ RT->AddStyleSheets('example-theme.css');
 
 =head1 NAME
 
-RT-Extension-ExampleTheme - [One line description of module's purpose here]
-
-=head1 DESCRIPTION
-
-[Why would someone install this extension? What does it do? What problem
-does it solve?]
+RT-Extension-ExampleTheme - Example Theme Extension
 
 =head1 RT VERSION
 
-Works with RT [What versions of RT is this known to work with?]
-
-[Make sure to use requires_rt and rt_too_new in Makefile.PL]
+Works with RT 4.2, 4.4, 4.6
 
 =head1 INSTALLATION
 
@@ -35,16 +28,9 @@ Works with RT [What versions of RT is this known to work with?]
 May need root permissions
 
 =item Edit your F</opt/rt4/etc/RT_SiteConfig.pm>
-
-If you are using RT 4.2 or greater, add this line:
+Add this line:
 
     Plugin('RT::Extension::ExampleTheme');
-
-For RT 4.0, add this line:
-
-    Set(@Plugins, qw(RT::Extension::ExampleTheme));
-
-or add C<RT::Extension::ExampleTheme> to your existing C<@Plugins> line.
 
 =item Clear your mason cache
 
@@ -70,7 +56,7 @@ or via the web at
 
 =head1 LICENSE AND COPYRIGHT
 
-This software is Copyright (c) 2017 by Maureen
+This extension is Copyright (c) 2017 Best Practical Solutions, LLC.
 
 This is free software, licensed under:
 
