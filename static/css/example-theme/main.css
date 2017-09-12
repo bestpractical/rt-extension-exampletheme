@@ -5,15 +5,19 @@ body.example-theme {
 }
 
 div#body {
-    background-color: #d6f2f5;
+    background-color: transparent;
+}
+
+body.example-theme {
+    background-image: url("../../../static/images/bpssymbol.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    background-attachment: fixed;
 }
 
 div#header {
-    background-color: #2dabb9;
-}
-
-input.button {
-    background-color: #195f67;
+    background-color: #595959;
 }
 
 .ticket-info-cfs .titlebox .titlebox-title .left, .ticket-info-basics .titlebox .titlebox-title .left {
@@ -45,4 +49,8 @@ input.button {
 .ticket-info-generic .titlebox .titlebox-title .left {
     background-color: #547ccc;
     color: #fff;
+}
+
+.titlebox-content {
+    background-color: #e6e6e6;
 }

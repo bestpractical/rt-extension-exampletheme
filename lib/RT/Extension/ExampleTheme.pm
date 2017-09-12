@@ -11,9 +11,20 @@ RT->AddStyleSheets('example-theme.css');
 
 RT-Extension-ExampleTheme - Example Theme Extension
 
+=head1 DESCRIPTION
+
+RT::Extension::ExampleTheme is a small example of the customizations users can make
+to change the look and feel of RT. These changes are saved as a theme for others to use.
+
 =head1 RT VERSION
 
-Works with RT 4.2, 4.4, 4.6
+Works with RT 4.2, 4.4
+
+=head1 CONFIGURATION
+To set this theme as the default RT theme (optional), add the following line to your
+RT_SiteConfig.pm
+
+    Set( $WebDefaultStylesheet, ('example-theme'));
 
 =head1 INSTALLATION
 

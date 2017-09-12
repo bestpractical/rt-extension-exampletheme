@@ -1,15 +1,18 @@
 NAME
-    RT-Extension-ExampleTheme - [One line description of module's purpose
-    here]
+    RT-Extension-ExampleTheme - Example Theme Extension
 
 DESCRIPTION
-    [Why would someone install this extension? What does it do? What problem
-    does it solve?]
+    RT::Extension::ExampleTheme is a small example of the customizations
+    users can make to change the look and feel of RT. These changes are
+    saved as a theme for others to use.
 
 RT VERSION
-    Works with RT [What versions of RT is this known to work with?]
+    Works with RT 4.2, 4.4
 
-    [Make sure to use requires_rt and rt_too_new in Makefile.PL]
+CONFIGURATION
+To set this theme as the default RT theme (optional), add the following line to your
+RT_SiteConfig.pm
+        Set( $WebDefaultStylesheet, ('example-theme'));
 
 INSTALLATION
     perl Makefile.PL
@@ -17,16 +20,8 @@ INSTALLATION
     make install
         May need root permissions
 
-    Edit your /opt/rt4/etc/RT_SiteConfig.pm
-        If you are using RT 4.2 or greater, add this line:
-
+    Edit your /opt/rt4/etc/RT_SiteConfig.pm Add this line:
             Plugin('RT::Extension::ExampleTheme');
-
-        For RT 4.0, add this line:
-
-            Set(@Plugins, qw(RT::Extension::ExampleTheme));
-
-        or add RT::Extension::ExampleTheme to your existing @Plugins line.
 
     Clear your mason cache
             rm -rf /opt/rt4/var/mason_data/obj
@@ -46,7 +41,7 @@ BUGS
         L<rt.cpan.org|http://rt.cpan.org/Public/Dist/Display.html?Name=RT-Extension-ExampleTheme>.
 
 LICENSE AND COPYRIGHT
-    This software is Copyright (c) 2017 by Maureen
+    This extension is Copyright (c) 2017 Best Practical Solutions, LLC.
 
     This is free software, licensed under:
 
