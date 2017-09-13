@@ -9,11 +9,6 @@ DESCRIPTION
 RT VERSION
     Works with RT 4.2, 4.4
 
-CONFIGURATION
-To set this theme as the default RT theme (optional), add the following line to your
-RT_SiteConfig.pm
-        Set( $WebDefaultStylesheet, ('example-theme'));
-
 INSTALLATION
     perl Makefile.PL
     make
@@ -27,6 +22,34 @@ INSTALLATION
             rm -rf /opt/rt4/var/mason_data/obj
 
     Restart your webserver
+
+CONFIGURATION
+    To set this theme as the default RT theme (optional), add the following
+    line to your RT_SiteConfig.pm
+
+        Set( $WebDefaultStylesheet, ('example-theme'));
+
+    Individual users can also select the theme they want on their
+    preferences page.
+
+EXAMPLE CONTENT
+    This extension provides some examples of ways to customize the style of
+    RT. You can find more information in the RT Style Documentation
+    <https://docs.bestpractical.com/rt/latest/customizing/styling_rt.html>.
+
+  CSS
+    To change the appearance of RT, you can modify any CSS files you copy
+    from one of RT's base themes. In addition to copying and modifying the
+    CSS set by RT, you can add your own and even do things like hide parts
+    of the RT UI. See static/css/example-theme.css for an example of hiding
+    the "Priority" field.
+
+  Javascript
+    RT uses jQuery, which provides many tools to modify the RT UI via
+    javascript. To see an example of changing a label with jQuery, see
+    static/js/example-theme.js, which changes "The Basics" on the ticket
+    display page to "Ticket State". The trickiest part is often getting the
+    selector right.
 
 AUTHOR
     Best Practical Solutions, LLC <modules@bestpractical.com>

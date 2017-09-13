@@ -6,6 +6,7 @@ our $VERSION = '0.01';
 
 # Add css files to the @CSSFiles config
 RT->AddStyleSheets('example-theme.css');
+RT->AddJavaScript('example-theme.js');
 
 =head1 NAME
 
@@ -19,12 +20,6 @@ to change the look and feel of RT. These changes are saved as a theme for others
 =head1 RT VERSION
 
 Works with RT 4.2, 4.4
-
-=head1 CONFIGURATION
-To set this theme as the default RT theme (optional), add the following line to your
-RT_SiteConfig.pm
-
-    Set( $WebDefaultStylesheet, ('example-theme'));
 
 =head1 INSTALLATION
 
@@ -50,6 +45,33 @@ Add this line:
 =item Restart your webserver
 
 =back
+
+=head1 CONFIGURATION
+
+To set this theme as the default RT theme (optional), add the following line to your
+RT_SiteConfig.pm
+
+    Set( $WebDefaultStylesheet, ('example-theme'));
+
+Individual users can also select the theme they want on their preferences page.
+
+=head1 EXAMPLE CONTENT
+
+This extension provides some examples of ways to customize the style of RT. You can find
+more information in the L<RT Style Documentation|https://docs.bestpractical.com/rt/latest/customizing/styling_rt.html>.
+
+=head2 CSS
+
+To change the appearance of RT, you can modify any CSS files you copy from one of RT's base
+themes. In addition to copying and modifying the CSS set by RT, you can add your own and
+even do things like hide parts of the RT UI. See F<static/css/example-theme.css> for an
+example of hiding the "Priority" field.
+
+=head2 Javascript
+
+RT uses jQuery, which provides many tools to modify the RT UI via javascript. To see an example
+of changing a label with jQuery, see F<static/js/example-theme.js>, which changes "The Basics" on
+the ticket display page to "Ticket State". The trickiest part is often getting the selector right.
 
 =head1 AUTHOR
 
